@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: var_analysis_risk_stress_ui
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run var_analysis_risk_stress_ui.py --server.port 8080 --server.enableCORS false
